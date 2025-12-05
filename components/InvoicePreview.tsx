@@ -60,14 +60,6 @@ export const InvoicePreview: React.FC<InvoicePreviewProps> = ({ data }) => {
         </div>
       </div>
 
-      {/* Totals Bar (Dates Removed) */}
-      <div className="flex justify-end mb-12 bg-navy-900 text-white p-6 rounded shadow-sm print:bg-gray-100 print:text-black print:border-black">
-        <div className="text-right">
-          <span className="block text-xs uppercase opacity-70 font-bold mb-1">Total Amount</span>
-          <span className="font-serif text-2xl text-gold-500 font-bold">{data.currencySymbol}{total.toFixed(2)}</span>
-        </div>
-      </div>
-
       {/* Table */}
       <table className="w-full mb-12">
         <thead>
